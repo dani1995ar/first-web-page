@@ -1,11 +1,99 @@
 .basic-grid {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 5px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     background-size: contain;
     grid-auto-rows: 240px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: whitesmoke;
 }
 
 .card {
     background-size: cover;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 500ms ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    position: absolute;
+    bottom: 0;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(20, 0, 0, 0.3) 20%,
+        rgba(0, 0, 0, 1)
+    );
+    padding: 0rem;
+    transform: translateY(70%);
+    transition: transform 800ms ease;
+}
+
+.card:hover .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card-content > *:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.card:hover .card-content > *:not(.card-title) {
+    opacity: 1;
+    transition-delay: 1300ms;
+}
+
+.card-title {
+    left: 5px;
+    position: relative;
+    width: max-content;
+}
+
+.card-content p {
+    margin-left: 3px;
+    position: relative;
+}
+
+.card-content .button{
+    margin-left: 0.75rem;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #D69F3A;
+    padding: 0.25rem 1.25rem;
+    bottom: 0.50rem;
+    border-radius: 0.25rem;
+}
+
+.button:hover,
+.button:focus {
+    background-color: white;
+    color: black;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding) + 3px);
+    left: calc(var(--padding) * -1);
+    bottom: -4px;
+    background: #D69F3A;
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+    transform-origin: right;
+}
+
+.card:hover .card-title::after{
+    transform: scaleX(1);
 }
