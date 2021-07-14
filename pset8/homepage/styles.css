@@ -8,11 +8,17 @@
 #hero {
     width: 100%;
     height: 250px;
-    background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.384)), url('./IMG/pexels-angele-j-128402.jpg') no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.384)), url('./IMG/pexels-lisa-1992913.jpg') no-repeat center / cover;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
     color:white;
     margin: 0 auto;
+}
+
+.quote {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .container {
@@ -36,7 +42,6 @@
 
 nav header {
     min-height: 8vh;
-    font-family: 'Source Sans Pro', sans-serif;
     background-color: white;
     margin: 0vh;
 }
@@ -69,6 +74,8 @@ nav header {
     letter-spacing: 2px;
     list-style: none;
     margin: 0vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
 }
 
 .nav-links a {
