@@ -12,6 +12,7 @@
 }
 
 .card {
+    box-shadow: 0 0 1rem rgba(0, 255, 255, 0.418);
     background-size: cover;
     overflow: hidden;
     border-radius: 1rem;

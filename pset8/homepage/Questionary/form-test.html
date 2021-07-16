@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="../styles.css" rel="stylesheet">
-    <title>Questionary</title>
+    <title>questionnaire</title>
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
     <header>
         <nav>
             <div class="logo" id="logo">
@@ -26,7 +26,7 @@
                     <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./form-test.html">Questionary</a>
+                    <a href="./form-test.html">Questionnaire</a>
                 </li>
                 <li>
                     <a href="../Payment/Payment.html">Payment</a>
@@ -46,30 +46,56 @@
 
         <script src="../app.js"></script>
     </header>
-    <main>
-        <form action="">
-            <label for="name">
-                <span>What's your name?</span>
-                <input type="text" name="name" id="name" autocomplete="name" required>
-            </label>
-            <label for="email">
-                <span>What's your email address?</span>
-                <input type="email" name="email" id="email" autocomplete="email" required>
-            </label>
-            <label for="country">
-                <span>In which country are you in?</span>
-                <input type="text" name="country" id="country" autocomplete="country" required>
-            </label>
-            <label for="postcode">
-                <span>What's your post code?</span>
-                <input type="text" name="postcode" id="postcode" autocomplete="postal-code" required>
-            </label>
-            <label for="date">
-                <span>When would you like to receive your groceries?</span>
-                <input type="date" name="date" id="date" autocomplete="off" required>
-            </label>
-            <input type="submit">
-        </form>
+    <main> 
+        <div class="container">
+            <h5 class="mb-5">questionnaire</h5>
+            <form novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input id="firstName" type="text" class="form-control" placeholder="John" autofocus required>
+                        <div class="invalid-feedback">Valid first name is required.</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">second name</label>
+                        <input id="lastName" type="text" class="form-control" placeholder="Smith" required>
+                        <div class="invalid-feedback">Valid second name is required.</div>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="Email" class="form-label">Email address</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input id="Email" type="text" class="form-control" placeholder="Jsmith@company.com" style="border-radius: .25rem;" required>
+                            <div class="invalid-feedback">Valid email address is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="days-a-week-shopping" class="form-label">How often do you go grocery shopping?</label>
+                        <select id="ays-a-week-shopping" class="form-control">
+                            <option value="">Please select an option...</option>
+                            <option value="">Less than once a week</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5+</option>
+                        </select>
+                        <div class="invalid-feedback">Please select an option</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="amount-household-occupants">How many people do you cook for?</label>
+                        <select id="amount-household-occupants" class="form-control">
+                            <option value="">Please select an option...</option>
+                            <option value="">Just me</option>
+                            <option value="">2 but they eat like 5 people</option>
+                            <option value="">3 or so...</option>
+                            <option value="">4 but they hardly ever eat anything</option>
+                            <option value="">A whole battalion and their dog</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 </html>
