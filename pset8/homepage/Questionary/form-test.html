@@ -8,6 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="../styles.css" rel="stylesheet">
     <title>questionnaire</title>
+    <link rel="icon" href="../IMG/favicon.ico" sizes="any">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light">
+<body class="bg-light" >
     <header>
         <nav>
             <div class="logo" id="logo">
@@ -86,14 +87,44 @@
                         <label for="amount-household-occupants">How many people do you cook for?</label>
                         <select id="amount-household-occupants" class="form-control">
                             <option value="">Please select an option...</option>
-                            <option value="">Just me</option>
-                            <option value="">2 but they eat like 5 people</option>
-                            <option value="">3 or so...</option>
-                            <option value="">4 but they hardly ever eat anything</option>
-                            <option value="">A whole battalion and their dog</option>
+                            <option value="1">Just me</option>
+                            <option value="2">2 but they eat like 5 people</option>
+                            <option value="3">3 or so...</option>
+                            <option value="4">4 but they hardly ever eat anything</option>
+                            <option value="5">A whole battalion and their dog</option>
                         </select>
                     </div>
                 </div>
+                
+                <hr class="my-10">
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input id="agree-to-privacy-policy" type="checkbox" class="form-check-input" checked>
+                        <label for="agree-to-privacy-policy" class="form-check-label">
+                            <p>
+                                Do you agree to our terms of service and privacy policy?
+                                TL;DR - you agree to us collecting all of your information 
+                                (not even a joke, just wait till I know how to add trackers to websites, 
+                                and facebook would seem like a privacy focussed company compared to me, 
+                                I will make sure you're never alone again😘).
+                            </p>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input id="agree-to-privacy-policy" type="checkbox" class="form-check-input" checked>
+                        <label for="agree-to-privacy-policy" class="form-check-label">
+                            <p>
+                                Subscribe to newsletter (basically a some span directly 
+                                into your mailbox at least 10 times a day). Notice how both of
+                                this checkboxes are checked for you so that you can't so easily say no....
+                            </p>
+                        </label>
+                    </div>
+                </div>
+
+                <hr>
+
             </form>
         </div>
     </main>
