@@ -48,7 +48,7 @@
     <main> 
         <div class="container">
             <h5 class="mb-3">Questionnaire</h5>
-            <form novalidate>
+            <form class="needs-validation" validate>
                 <div class="row gy-4">
                     <div class="col-sm-6">
                         <label for="firstName" class="form-label">First name</label>
@@ -58,7 +58,9 @@
                     <div class="col-sm-6">
                         <label for="lastName" class="form-label">second name</label>
                         <input id="lastName" type="text" class="form-control" placeholder="Smith" required>
-                        <div class="invalid-feedback">Valid second name is required.</div>
+                        <div class="invalid-feedback">
+                            Valid second name is required.
+                        </div>
                     </div>
                     <div class="col-12">
                         <label for="Email" class="form-label">Email address</label>
@@ -118,7 +120,9 @@
                         </label>
                     </div>
                 </div>
-
+                
+                <button class="btn btn-primary btn-lg btn-block">Submit form</button>
+                
                 <hr>
 
             </form>
