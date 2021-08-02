@@ -48,25 +48,18 @@
     </header>
     <hr>
     <main>
-        <!--
-        <select name="phrases" id="phrases">
-            <option value="">Nothing shady going on in here</option>
-            <option value="">Just go ahead and type in your credit card details, not gonna use them, I promise</option>
-            <option value="">I'll keep those details safe for you, just put leave them here</option>
-        </select> 
-        -->
         <section>
             <div>
                 <div class="cc-card">
                     <div class="cc-card-front">
                         <h3 class="debit">Debit Card</h3>
                         <h3 class="bank">Bank name</h3>
-                        <img src="../IMG/chip.png" alt="Credit card chip image">
-                        <input type="number" placeholder="0123 4567 8901 2345">
-                        <span><h5 class="valid-thru">Valid thru</h5></span>
+                        <img src="../IMG/chip.png" alt="Credit card chip image" class="cc-chip">
+                        <input type="number" placeholder="Card number. i.e.  1234  5678  9012  3456" class="cc-number">
+                        <span><h6 class="valid-thru">Valid<br>thru</span>
                         <span>
-                            <select id="cc-month">
-                                <option value="">mm</option>
+                            <select class="cc-month">
+                                <option value="">MM</option>
                                 <option value="">01</option>
                                 <option value="">02</option>
                                 <option value="">03</option>
@@ -80,9 +73,7 @@
                                 <option value="">11</option>
                                 <option value="">12</option>
                             </select>
-                        </span>
-                        <span>
-                            <select id="cc-year">
+                            <select class="cc-year">
                                 <option value="">YYYY</option>
                                 <option value="">2021</option>
                                 <option value="">2022</option>
@@ -95,10 +86,28 @@
                                 <option value="">2029</option>
                                 <option value="">2030</option>
                             </select>
-                        </span>
-                        <input type="text" class="card-holder">
+                        </span></h5>
+                        <input type="text" class="card-holder" placeholder="Card holder name. i.e. John Smith">
+                    </div>
+                    <div class="cc-card-back">
+                        <div class="black-stripe"></div>
+                        <div class="ccv-text">
+                            <h5> Autorized signature - not valid unless signed</h5>
+                            <div class="white-stripe"></div>
+                            <input type="text" class="ccv" placeholder="1 2 3">
+                        </div>
+                        <p class="filler-text">Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Rerum odio hic, quod adipisci cupiditate
+                             possimus facilis corrupti tempora odit, maiores eos soluta dolorem
+                              distinctio iusto illum dolore saepe quibusdam explicabo voluptatibus 
+                              prferendis unde quasi! Optio nemo temporibus quidem ad fugiat, ducimus, 
+                              voluptates inventore, culpa est magni illo doloribus quibusdam quaerat 
+                              adipisci quae! Ratione cum fuga, officia iure ex qui quisquam?</p>
                     </div>
                 </div>
+
+                <script src="rotation.js"></script>
+
             </div>
         </section>    
     </main>
