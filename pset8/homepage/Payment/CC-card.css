@@ -232,10 +232,15 @@ box-shadow: 0 0 2pt 1pt #ffffffb0;
     font-weight: 300;
 }
 
-
-
-
-
+.footer {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+}
 
 
 
