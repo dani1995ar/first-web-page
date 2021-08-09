@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr, header, .nav-links a {
+    color: azure;
+}
+
+div.line1, div.line2, div.line3 {
+    background-color: azure;
+}
+
+.nav-links{
+    background-color: black;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.nav-links.nav-active {
+    background-color: black;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+}
+
+.while-making, .felt-like, .worth-it {
+    font-family: montserrat;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: azure;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 64px;
+    padding: 15px 25px;
+   }
+   
+h3 {
+    margin-top: 2rem;
+    font-size: 32px;
+    padding: 10px 15px;    
+}
+
+.felt-like {
+    opacity: 0;
+    animation: reveal 5s infinite;
+  }
+
+@keyframes reveal {
+    0% {opacity:0;}
+    50% {opacity: 1;}
+    100% {opacity:0;}
+}
