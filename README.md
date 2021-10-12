@@ -1,6 +1,5 @@
 # first-web-page
 First of all I would like to thank @[Atabord](https://github.com/Atabord) for mentoring me during this process and for being so patient.
-I will use this section to describe a bit of the process of creating my first web page in case anyone from CS50x might be interested.
-for now though I'd like to just say that if you are undertaking the course and having doubts about how to do X or Y thing or how to implement a feature
-don't feel afraid to google it and use the responses you find AS LONG AS YOU UNDERSTAND WHAT'S GOING ON, and as long as you are able to modify the existing solution
-to fit your specific needs.
+
+
+This is the first statics webpage I built. In each section I tried to learn and implement something new for mew, for instance, the index page, is bacis html, basic css and basic JS. On the Questionnaire page, I took bootstrap for a spin, I tried its different options and and also made an effort to make my job a bit entertaining. Next is the Payments section, in this one I dove deep into css, I used a tutorial for this card, but I tried to implement it with a few twists, such as the rotation of the card (on the original tutorial it was done on hover), I wanted to have something beautiful yet useful, so I made a short JS function to implement the rotation of the card only when the card itself (not the input fields) is clicked, as with everything I do, I tried to have some fun and decided to include a small "joke" on the footer of the page. Finally, on the "While making this website..." section I wanted to make a reminder for miself of how the process felt for me at the time, and the struggles I had with it, I made it with basic JS since I will be diving deeper into it in the future, and I didn't want to rush it.
